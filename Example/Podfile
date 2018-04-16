@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CHOPopoverLauncher_Example' do
+  pod 'CHOPopoverLauncher', :path => '../'
+
+  target 'CHOPopoverLauncher_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
