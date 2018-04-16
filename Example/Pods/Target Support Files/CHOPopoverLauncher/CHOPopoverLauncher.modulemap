@@ -1,0 +1,6 @@
+framework module CHOPopoverLauncher {
+  umbrella header "CHOPopoverLauncher-umbrella.h"
+
+  export *
+  module * { export * }
+}

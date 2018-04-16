@@ -22,7 +22,7 @@ pod 'CHOPopoverLauncher'
 
 ## Author
 
-chojd, jingda.cao@mfashion.com.cn
+chojd, i@chojd.com
 
 ## License
 

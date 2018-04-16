@@ -1,0 +1,6 @@
+framework module Pods_CHOPopoverLauncher_Tests {
+  umbrella header "Pods-CHOPopoverLauncher_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

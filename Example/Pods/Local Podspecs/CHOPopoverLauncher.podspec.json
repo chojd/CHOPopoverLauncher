@@ -1,0 +1,43 @@
+{
+  "name": "CHOPopoverLauncher",
+  "version": "0.1.0",
+  "summary": "Popover Launch",
+  "description": "Popover Launcher 对 popover 对队列管理",
+  "homepage": "http://git.CHOashion.com.cn/ios-CHCHOramework/com-CHOashion-popover_launcher",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "chojd": "jingda.cao@mfashion.com.cn"
+  },
+  "source": {
+    "git": "git@git.CHOashion.com.cn:ios-CHCHOramework/com-CHOashion-popover_launcher.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "frameworks": "UIKit",
+  "subspecs": [
+    {
+      "name": "Launcher",
+      "source_files": "Sources/Launcher/*",
+      "dependencies": {
+        "CHOPopoverLauncher/Popover": [
+
+        ]
+      },
+      "subspecs": [
+        {
+          "name": "Internal",
+          "source_files": "Sources/Launcher/Internal/*"
+        }
+      ]
+    },
+    {
+      "name": "Popover",
+      "source_files": "Sources/Popover/*"
+    }
+  ]
+}

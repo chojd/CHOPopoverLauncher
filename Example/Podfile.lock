@@ -1,0 +1,24 @@
+PODS:
+  - CHOPopoverLauncher (0.1.0):
+    - CHOPopoverLauncher/Launcher (= 0.1.0)
+    - CHOPopoverLauncher/Popover (= 0.1.0)
+  - CHOPopoverLauncher/Launcher (0.1.0):
+    - CHOPopoverLauncher/Launcher/Internal (= 0.1.0)
+    - CHOPopoverLauncher/Popover
+  - CHOPopoverLauncher/Launcher/Internal (0.1.0):
+    - CHOPopoverLauncher/Popover
+  - CHOPopoverLauncher/Popover (0.1.0)
+
+DEPENDENCIES:
+  - CHOPopoverLauncher (from `../`)
+
+EXTERNAL SOURCES:
+  CHOPopoverLauncher:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CHOPopoverLauncher: c0f452218b69c91fa34c2e7016bbefb0bad1a531
+
+PODFILE CHECKSUM: 860a00b7b36564798dd57eb7adc0ce6403152958
+
+COCOAPODS: 1.5.0

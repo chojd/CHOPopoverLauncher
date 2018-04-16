@@ -9,34 +9,39 @@
 Pod::Spec.new do |s|
   s.name             = 'CHOPopoverLauncher'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of CHOPopoverLauncher.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
-  s.homepage         = 'https://github.com/chojd/CHOPopoverLauncher'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'chojd' => 'jingda.cao@mfashion.com.cn' }
-  s.source           = { :git => 'https://github.com/chojd/CHOPopoverLauncher.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '8.0'
-
-  s.source_files = 'CHOPopoverLauncher/Classes/**/*'
+  s.summary          = 'Popover Launch'
   
-  # s.resource_bundles = {
-  #   'CHOPopoverLauncher' => ['CHOPopoverLauncher/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  # This description is used to generate tags and improve search results.
+  #   * Think: What does it do? Why did you write it? What is the focus?
+  #   * Try to keep it short, snappy and to the point.
+  #   * Write the description between the DESC delimiters below.
+  #   * Finally, don't worry about the indent, CocoaPods strips it!
+  
+  s.description      = <<-DESC
+      Popover Launcher 对 popover 对队列管理
+  DESC
+  
+  s.homepage = 'http://git.CHOashion.com.cn/ios-CHCHOramework/com-CHOashion-popover_launcher'
+  s.license  = { :type => 'MIT', :file => 'LICENSE' }
+  s.author   = { 'chojd' => 'i@chojd.com' }
+  s.source    = { :git => 'git@git.CHOashion.com.cn:ios-CHCHOramework/com-CHOashion-popover_launcher.git', :tag => s.version.to_s }
+  
+  s.ios.deployment_target = '8.0'
+  
+  s.subspec 'Launcher' do |ss|
+    ss.source_files = 'Sources/Launcher/*'
+    
+    ss.subspec 'Internal' do |sss|
+      sss.source_files = 'Sources/Launcher/Internal/*'
+    end
+    
+    ss.dependency 'CHOPopoverLauncher/Popover'
+  end
+  
+  s.subspec 'Popover' do |ss|
+    ss.source_files = 'Sources/Popover/*'
+  end
+  
+  s.frameworks = 'UIKit'
+  
 end
